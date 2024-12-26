@@ -1,0 +1,101 @@
+@import 'reset.css';
+@import 'style-variables.scss';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  background: center / cover no-repeat url(/bg.jpg);
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10%;
+}
+
+// ----------------------------------------------------------------------
+.player {
+  width: 320px;
+  background-color: $player-color;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.img-cont {
+  width: 100%;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.music-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.title {
+  color: $paramount-color;
+  font-size: 1rem;
+}
+
+.subtitle,
+.time-cont {
+  color: $secondary-color;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+// ----------------------------------------------------------------------
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.progress-bar-cont {
+  cursor: pointer;
+  position: relative;
+  background-color: $paramount-color;
+  height: 4px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: $active-color;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  height: 45px;
+}
+
+.button {
+  background-color: transparent;
+}
+
+.pause-btn {
+  background-color: $active-color;
+  border-radius: 50%;
+}
