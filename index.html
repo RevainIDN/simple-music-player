@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <script type="module" crossorigin src="/simple-music-player/assets/index-B1JfENBD.js"></script>
+  <link rel="stylesheet" crossorigin href="/simple-music-player/assets/index-DcuYbl_u.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="player">
+      <div class="img-cont">
+        <img class="cover-img" src="/simple-music-player/cover-1.png" alt="Cover 1">
+      </div>
+      <div class="music-desc">
+        <h1 class="title">Lost in the City Lights</h1>
+        <p class="subtitle">Cosmo Sheldrake</p>
+      </div>
+      <audio class="audio" src="/simple-music-player/audio/lost-in-city-lights-145038.mp3"></audio>
+      <div class="controls">
+        <div class="time-cont"><span id="current-time">00:00</span> <span id="duration">00:00</span></div>
+        <div class="progress-bar-cont">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="buttons">
+          <button id="prev-btn" class="button"><img src="/simple-music-player/Prev.svg" alt="prev"></button>
+          <button id="pause-btn" class="button"><img class="pause-img" src="/simple-music-player/Play.svg" alt="pause"></button>
+          <button id="next-btn" class="button"><img src="/simple-music-player/Next.svg" alt="next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
