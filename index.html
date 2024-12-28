@@ -11,7 +11,7 @@
   <div id="app">
     <div class="player">
       <div class="img-cont">
-        <img class="img" src="/cover-1.png" alt="Cover 1">
+        <img class="cover-img" src="/cover-1.png" alt="Cover 1">
       </div>
       <div class="music-desc">
         <h1 class="title">Lost in the City Lights</h1>
@@ -19,14 +19,14 @@
       </div>
       <audio class="audio" src="/audio/lost-in-city-lights-145038.mp3"></audio>
       <div class="controls">
-        <div class="time-cont"><span class="current-time">0:00</span> <span class="duration">0:00</span></div>
+        <div class="time-cont"><span id="current-time">00:00</span> <span id="duration">00:00</span></div>
         <div class="progress-bar-cont">
           <div class="progress-bar"></div>
         </div>
         <div class="buttons">
-          <button class="button prev-btn"><img src="/Prev.svg" alt="prev"></button>
-          <button class="button pause-btn"><img src="/Play.svg" alt="pause"></button>
-          <button class="button next-btn"><img src="/Next.svg" alt="next"></button>
+          <button id="prev-btn" class="button"><img src="/Prev.svg" alt="prev"></button>
+          <button id="pause-btn" class="button"><img class="pause-img" src="/Play.svg" alt="pause"></button>
+          <button id="next-btn" class="button"><img src="/Next.svg" alt="next"></button>
         </div>
       </div>
     </div>

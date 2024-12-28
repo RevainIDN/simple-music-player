@@ -1,5 +1,5 @@
-@import 'reset.css';
-@import 'style-variables.scss';
+@use 'reset';
+@use 'style-variables';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,29 +9,32 @@
 
 body {
   background: center / cover no-repeat url(/bg.jpg);
-  overflow: hidden;
+  margin: 0;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 #app {
   display: flex;
   justify-content: center;
   width: 100vw;
-  margin-top: 10%;
 }
 
 // ----------------------------------------------------------------------
 .player {
   width: 320px;
-  background-color: $player-color;
+  background-color: style-variables.$player-color;
   padding: 20px;
   border-radius: 20px;
+  margin-top: 7%;
+  margin-bottom: 20px;
 }
 
 .img-cont {
   width: 100%;
 }
 
-.img {
+.cover-img {
   border-radius: 20px;
 }
 
@@ -44,13 +47,13 @@ body {
 }
 
 .title {
-  color: $paramount-color;
+  color: style-variables.$paramount-color;
   font-size: 1rem;
 }
 
 .subtitle,
 .time-cont {
-  color: $secondary-color;
+  color: style-variables.$secondary-color;
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -70,7 +73,7 @@ body {
 .progress-bar-cont {
   cursor: pointer;
   position: relative;
-  background-color: $paramount-color;
+  background-color: style-variables.$paramount-color;
   height: 4px;
   border-radius: 5px;
   margin-top: 3px;
@@ -79,7 +82,7 @@ body {
 .progress-bar {
   height: 100%;
   width: 0%;
-  background-color: $active-color;
+  background-color: style-variables.$active-color;
 }
 
 .buttons {
@@ -95,7 +98,17 @@ body {
   background-color: transparent;
 }
 
-.pause-btn {
-  background-color: $active-color;
+#pause-btn {
+  background-color: style-variables.$active-color;
   border-radius: 50%;
+}
+
+#pause-btn:active {
+  background-color: #ad3869;
+}
+
+@media (max-width: 380px) {
+  #app {
+    padding: 20px;
+  }
 }
