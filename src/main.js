@@ -43,7 +43,6 @@ function prevMusic() {
 
 	if (currentMusic < 0) {
 		currentMusic = musicArr.length - 1;
-		console.log(currentMusic);
 	}
 	scrollingMusic();
 }
@@ -53,7 +52,6 @@ function nextMusic() {
 
 	if (currentMusic > musicArr.length - 1) {
 		currentMusic = 0;
-		console.log(currentMusic);
 	}
 	scrollingMusic();
 }
